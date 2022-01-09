@@ -4,75 +4,146 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/4.1.5/css/flag-icons.min.css">
     <title>Diabetes Prediction</title>
 </head>
 <body>
-    <h1>Diabetes Prediction</h1>
 
-    <label>age
-        <input type="number" name="options" value="age">
-    </label>
-    <br>
-    <label>gender
-        <input type="checkbox" name="options" value="gender">
-    </label>
-    <br>
-    <label>polyuria
-        <input type="checkbox" name="options" value="polyuria">
-    </label>
-    <br>
-    <label>polydipsia
-        <input type="checkbox" name="options" value="polydipsia">
-    </label>
-    <br>
-    <label>sudden_weight_loss
-        <input type="checkbox" name="options" value="sudden_weight_loss">
-    </label>
-    <br>
-    <label>weakness
-        <input type="checkbox" name="options" value="weakness">
-    </label>
-    <br>
-    <label>polyphagia
-        <input type="checkbox" name="options" value="polyphagia">
-    </label>
-    <br>
-    <label>genital_thrush
-        <input type="checkbox" name="options" value="genital_thrush">
-    </label>
-    <br>
-    <label>visual_blurring
-        <input type="checkbox" name="options" value="visual_blurring">
-    </label>
-    <br>
-    <label>itching
-        <input type="checkbox" name="options" value="itching">
-    </label>
-    <br>
-    <label>irritability
-        <input type="checkbox" name="options" value="irritability">
-    </label>
-    <br>
-    <label>delayed_healing
-        <input type="checkbox" name="options" value="delayed_healing">
-    </label>
-    <br>
-    <label>partial_paresis
-        <input type="checkbox" name="options" value="partial_paresis">
-    </label>
-    <br>
-    <label>muscle_stiffness
-        <input type="checkbox" name="options" value="muscle_stiffness">
-    </label>
-    <br>
-    <label>alopecia
-        <input type="checkbox" name="options" value="alopecia">
-    </label>
-    <br>
-    <label>obesity
-        <input type="checkbox" name="options" value="obesity">
-    </label>
-    <br>
-    <button type="submit">Submit</button>
+    <div class="header">
+        <h1>Diabetes Prediction</h1>
+        <h4>Diabetes is a chronic (long-lasting) health condition that affects how your body turns food into energy.</h4>
+        <a href="https://www.cdc.gov/diabetes/basics/diabetes.html">Check out for more information about diabetes</a>
+    </div>
+    
+    <div class="attributes">
+        <ul>
+            <span class="flag-icon flag-icon-us"></span>&nbsp;English<br>
+            <span class="flag-icon flag-icon-tr"></span>&nbsp;Türkçe<br>
+            <li>
+                <strong>age</strong> : Age.<br>
+                <strong>yaş</strong> : Yaş.<br><br>
+            </li>
+            <li>
+                <strong>gender</strong> : Gender.<br>
+                <strong>cinsiyet</strong> : Cinsiyet.<br><br>
+            </li>
+            <li>
+                <strong>polyuria</strong> : Whether the patient experienced excessive urination or not.<br>
+                <strong>poliüri</strong> : Hastanın aşırı idrara çıkma yaşayıp yaşamadığı.<br><br>
+            </li>
+            <li>
+                <strong>polydipsia</strong> : Whether the patient experienced excessive thirst/excess drinking or not.<br>
+                <strong>polidipsi</strong> : Hastanın aşırı susama/aşırı içme yaşayıp yaşamadığı.<br><br>
+            </li>
+            <li>
+                <strong>sudden weight loss</strong> : Whether patient had an episode of sudden weight loss or not.<br>
+                <strong>ani kilo kaybı</strong> : Hastanın ani kilo kaybı atağı geçirip geçirmediği.<br><br>
+            </li>
+            <li>
+                <strong>weakness</strong> : Whether patient had an episode of feeling weak.<br>
+                <strong>zayıflık</strong> : Hastanın zayıf hissetme nöbeti geçirip geçirmediği.<br><br>
+            </li>
+            <li>
+                <strong>polyphagia</strong> : Whether patient had an episode of excessive/extreme hunger or not.<br>
+                <strong>polifaji</strong> : Hastanın aşırı/aşırı açlık dönemi geçirip geçirmediği.<br><br>
+            </li>
+            <li>
+                <strong>genital thrush</strong> : Whether patient had a yeast infection or not.<br>
+                <strong>genital pamukçuk</strong> : Hastanın mantar enfeksiyonu geçirip geçirmediği.<br><br>
+            </li>
+            <li>
+                <strong>visual_blurring</strong> : Whether patient had an episode of blurred vision.<br>
+                <strong>görsel bulanıklık</strong> : Hastanın bulanık görme epizodu olup olmadığı.<br><br>
+            </li>
+            <li>
+                <strong>itching</strong> : Whether patient had an episode of itch.<br>
+                <strong>kaşıntı</strong> : Hastanın kaşıntı nöbeti geçirip geçirmediği.<br><br>
+            </li>
+            <li>
+                <strong>irritability</strong> : Whether patient had an episode of irritability.<br>
+                <strong>sinirlilik</strong> : Hastanın bir sinirlilik dönemi geçirip geçirmediği.<br><br>
+            </li>
+            <li>
+                <strong>delayed healing</strong> : Whether patient had an noticed delayed healing when wounded.<br>
+                <strong>gecikmiş iyileşme</strong> : Hastanın yaralandığında iyileşmede gecikme fark edip etmediği.<br><br>
+            </li>
+            <li>
+                <strong>partial paresis</strong> : Whether patient had an episode of weakening of a muscle/group of muscles or not.<br>
+                <strong>kısmi parezi</strong> : Hastanın bir kas/kas grubunda zayıflama atağı geçirip geçirmediği.<br><br>
+            </li>
+            <li>
+                <strong>muscle stiffness</strong> : Whether patient had an episode of muscle stiffness.<br>
+                <strong>kas sertliği</strong> : Hastanın kas sertliği atağı olup olmadığı.<br><br>
+            </li>
+            <li>
+                <strong>alopecia</strong> : Whether patient experienced hair loss or not.<br>
+                <strong>alopesi</strong> : Hastanın saç dökülmesi yaşayıp yaşamadığı.<br><br>
+            </li>
+            <li>
+                <strong>obesity</strong> : Whether patient can be considered obese or not using his body mass index.<br>
+                <strong>obezite</strong> : Hastanın vücut kitle indeksini kullanıp kullanmadığı obez sayılabilir mi?.<br><br>
+            </li>
+        </ul>
+    </div>
+
+    <div class="form">
+        <form action="/" method="POST">
+            <label>age</label>
+            <input type="number" name="options" value="age" required><br>
+
+            <label>gender (Check it if you are a male)</label>
+            <input type="checkbox" name="options" value="gender"><br>
+
+            <label>polyuria</label>
+            <input type="checkbox" name="options" value="polyuria"><br>
+
+            <label>polydipsia</label>
+            <input type="checkbox" name="options" value="polydipsia"><br>
+
+            <label>sudden_weight_loss</label>
+            <input type="checkbox" name="options" value="sudden_weight_loss"><br>
+
+            <label>weakness</label>
+            <input type="checkbox" name="options" value="weakness"><br>
+
+            <label>polyphagia</label>
+            <input type="checkbox" name="options" value="polyphagia"><br>
+
+            <label>genital_thrush
+            <input type="checkbox" name="options" value="genital_thrush"><br>
+
+            <label>visual_blurring</label>
+            <input type="checkbox" name="options" value="visual_blurring"><br>
+
+            <label>itching</label>
+            <input type="checkbox" name="options" value="itching"><br>
+
+            <label>irritability</label>
+            <input type="checkbox" name="options" value="irritability"><br>
+
+            <label>delayed_healing</label>
+            <input type="checkbox" name="options" value="delayed_healing"><br>
+
+            <label>partial_paresis</label>
+            <input type="checkbox" name="options" value="partial_paresis"><br>
+
+            <label>muscle_stiffness</label>
+            <input type="checkbox" name="options" value="muscle_stiffness"><br>
+
+            <label>alopecia</label>
+            <input type="checkbox" name="options" value="alopecia"><br>
+
+            <label>obesity</label>
+            <input type="checkbox" name="options" value="obesity"><br>
+
+            <button type="submit">Submit</button>
+        </form>
+        {% if pred is defined %}
+            <pre>{{ pred }}</pre>
+        {% endif %}
+    </div>
+
 </body>
 </html>
