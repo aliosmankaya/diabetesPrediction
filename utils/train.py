@@ -6,7 +6,7 @@ from sklearn.ensemble import RandomForestClassifier
 from joblib import dump
 
 # Read data
-data = pd.read_csv("diabetes_data.csv", sep=";")
+data = pd.read_csv("data/diabetes_data.csv", sep=";")
 
 # Label Encoding for Gender
 encoder = LabelEncoder()
@@ -26,7 +26,7 @@ model = RandomForestClassifier()
 model.fit(x_train, y_train)
 
 # Save model
-dump(model, "model.joblib")
+dump(model, "model/model.joblib")
 
 # Test Prediction
 y_pred = model.predict(x_test)

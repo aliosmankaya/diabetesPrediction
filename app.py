@@ -1,5 +1,5 @@
 from flask import Flask, render_template, redirect, request, url_for
-from predict import predict, columns, model
+from utils.predict import predict, columns, model
 
 
 app = Flask(

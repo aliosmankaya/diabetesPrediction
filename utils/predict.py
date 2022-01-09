@@ -4,7 +4,7 @@ from sklearn.preprocessing import MinMaxScaler
 from joblib import load
 
 # Load model
-model = load("model.joblib")
+model = load("model/model.joblib")
 
 # Data columns
 columns = [
@@ -18,7 +18,7 @@ columns = [
 def predict(columns, age, checks, model):
 
     checkList = []
-    data = pd.read_csv("diabetes_data.csv", sep=";")
+    data = pd.read_csv("data/diabetes_data.csv", sep=";")
 
     scaler = MinMaxScaler()
     scaler.fit_transform(data.age.values.reshape(-1,1))
