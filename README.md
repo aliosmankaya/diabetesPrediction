@@ -23,16 +23,18 @@ There isn’t a cure yet for diabetes, but losing weight, eating healthy food, a
 ---
 
 * Clone repository to your local machine
-```
+```bash
 git clone https://github.com/aliosmankaya/diabetesPrediction.git
 ```
 * Install requirements
-```
+```bash
 pip install -r requirements.txt
 ```
 * Run Web App
+```bash
+python app.py   # Windows 
 ```
-python app.py   # Windows  
+```bash
 python3 app.py  # Linux
 ```
 * Locate on your browser
