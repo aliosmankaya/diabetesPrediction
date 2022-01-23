@@ -35,11 +35,12 @@ def predict(columns, age, checks, model):
 
     pred = model.predict(np.array([checkList,]))
     pred_proba = model.predict_proba(np.array([checkList,]))
+    pred_percent = str(pred_proba[0][pred[0]]).split(".")[1]
 
     if pred[0] == 0:
-        pred_text = f"You're ok\nAccuracy: {pred_proba[0][pred[0]]}"
+        pred_text = f"You're ok\nAccuracy: {pred_percent}%"
 
     elif pred[0] == 1:
-        pred_text = f"You have diabetes\nAccuracy: {pred_proba[0][pred[0]]}"
+        pred_text = f"You have diabetes\nAccuracy: {pred_percent}%"
 
     return pred_text
