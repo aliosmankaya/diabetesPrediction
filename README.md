@@ -1,6 +1,6 @@
 # Diabetes Prediction 
 
-![](page.png)
+![](webpage.png)
 
 ## What is Diabetes?
 
