@@ -1,10 +1,8 @@
 # Diabetes Prediction 
 
-## What is Diabetes?
-
---- 
-
 ![](page.png)
+
+## What is Diabetes?
 
 Diabetes is a chronic (long-lasting) health condition that affects how your body turns food into energy.
 
