@@ -4,6 +4,8 @@
 
 --- 
 
+![](page.png)
+
 Diabetes is a chronic (long-lasting) health condition that affects how your body turns food into energy.
 
 Most of the food you eat is broken down into sugar (also called glucose) and released into your bloodstream. When your blood sugar goes up, it signals your pancreas to release insulin. Insulin acts like a key to let the blood sugar into your body’s cells for use as energy.
@@ -23,18 +25,18 @@ There isn’t a cure yet for diabetes, but losing weight, eating healthy food, a
 ---
 
 * Clone repository to your local machine
-```bash
+```
 git clone https://github.com/aliosmankaya/diabetesPrediction.git
 ```
 * Install requirements
-```bash
+```
 pip install -r requirements.txt
 ```
 * Run Web App
-```bash
+```
 python app.py   # Windows 
 ```
-```bash
+```
 python3 app.py  # Linux
 ```
 * Locate on your browser
